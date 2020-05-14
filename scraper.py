@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*- 
+
 import selenium, time, re 
 from datetime import datetime
 from selenium.webdriver import Firefox
