@@ -113,7 +113,7 @@ class InstaScrapper:
             profile_details['likes'] += likes
             profile_details['comments'] += comments
             profile_details['watches'] += watches
-            time.sleep(2)
+            time.sleep(3)
         profile_details['datetime_of_getInfo'] = datetime.now()
         profile_details['profile_url'] = profile_url
         self.profiles_info.append(profile_details)
