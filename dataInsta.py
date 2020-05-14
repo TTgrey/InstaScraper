@@ -14,7 +14,7 @@ if __name__ == '__main__':
         "https://www.instagram.com/chilipeppers/"
     ]
     scrapper = InstaScrapper(50)
-    with ThreadPoolExecutor(max_workers = 5) as executor:
+    with ThreadPoolExecutor(max_workers = 3) as executor:
         executor.map(scrapper.getProfilePostsDetails, list_of_profile_urls)
     df1 = pd.DataFrame(scrapper.post_details)
     df2 = pd.DataFrame(scrapper.profiles_info)
