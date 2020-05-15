@@ -1,1 +1,1 @@
-# InstaScreaper
+# InstaScraper
